@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1 class="h1"><%= tocTitle %></h1>
-<nav id="toc" epub:type="toc" role="doc-toc">
+<nav id="toc" epub:type="toc">
     <ol>
         <% content.forEach(function(content, index){ %>
             <% if(!content.excludeFromToc && content.beforeToc){ %>
