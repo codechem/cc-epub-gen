@@ -120,7 +120,7 @@ class EPub
         that = @
         if that.name in ["img", "br", "hr"]
           if that.name is "img"
-            $(that).attr("alt", $(that).attr("alt") or "image-placeholder")
+            $(that).attr("alt", $(that).attr("alt") or "")
 
         for k,v of attrs
           if k in allowedAttributes
