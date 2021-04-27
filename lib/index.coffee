@@ -207,7 +207,7 @@ class EPub
         </head>
       <body>
       """
-      data += if content.title and self.options.appendChapterTitles then "<h1>#{entities.encodeXML(content.title)}</h1>" else ""
+      data += if content.title and self.options.appendChapterTitles then ""
       data += if content.title and content.author and content.author.length then "<p class='epub-author'>#{entities.encodeXML(content.author.join(", "))}</p>" else ""
       data += if content.title and content.url then "<p class='epub-link'><a href='#{content.url}'>#{content.url}</a></p>" else ""
       data += "#{content.data}</body></html>"
